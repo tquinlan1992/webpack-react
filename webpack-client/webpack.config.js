@@ -1,8 +1,9 @@
 const path = require('path');
 const appRoot = require('app-root-path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const htmlWebpackTemplate = require('html-webpack-template');
 
-const entry = appRoot + '/src/app.ts';
+const entry = appRoot + '/src/app.tsx';
 const build = appRoot + '/build';
 const appOutputPath = build;
 const appOutputFilename = 'app.js';
@@ -43,6 +44,8 @@ module.exports = {
         ]
     },
     plugins: [new HtmlWebpackPlugin({
-        title: "Webpack-Angular"
+        title: "Webpack-Angular",
+        template: htmlWebpackTemplate,
+        appMountId: 'app'
     })]
 };

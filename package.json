@@ -1,0 +1,25 @@
+{
+  "name": "webpack-angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-client": "cd ./webpack-client && webpack -p",
+    "watch-client": "cd ./webpack-client && webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "app-root-path": "^2.0.1",
+    "awesome-typescript-loader": "^3.2.3",
+    "html-webpack-plugin": "^2.30.1",
+    "source-map-loader": "^0.2.2",
+    "typescript": "^2.5.3",
+    "webpack": "^3.7.1"
+  },
+  "dependencies": {
+    "moment": "^2.19.1",
+    "app-root-path": "^2.0.1"
+  }
+}

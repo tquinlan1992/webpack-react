@@ -1,4 +1,5 @@
 import greeter from './greeter';
+import './index.scss';
 
 greeter();
 

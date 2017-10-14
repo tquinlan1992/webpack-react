@@ -1,8 +1,8 @@
 import * as moment from 'moment';
 
-function greet() {
+function greet(): string {
     var day = moment().format('dddd');
-    console.log('Have the best ' + day + '!');
+    return 'Have the best ' + day + '!';
 }
 
 export default greet;

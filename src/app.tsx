@@ -9,7 +9,7 @@ import * as ReactDOM from 'react-dom';
 const App = () => {
   return (
     <div>
-      <p>Hello world!</p>
+      <p>{greeter()}</p>
     </div>
   )
 }

@@ -59,7 +59,8 @@ module.exports = {
     },
     plugins: [new HtmlWebpackPlugin({
         title: "Webpack-Angular",
-        template: htmlWebpackTemplate,
+        inject: false,
+        template: require('html-webpack-template'),
         appMountId: 'app'
     })]
 };

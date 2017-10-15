@@ -37,6 +37,7 @@
     "app-root-path": "^2.0.1",
     "material-ui": "^0.19.4",
     "moment": "^2.19.1",
-    "react": "^16.0.0"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   }
 }

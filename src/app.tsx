@@ -1,17 +1,11 @@
-import greeter from './greeter';
+import Main from './greeter';
 import './index.scss';
-
-greeter();
-
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-const App = () => {
-  return (
+ReactDOM.render(
     <div>
-      <p>{greeter()}</p>
-    </div>
-  )
-}
-
-ReactDOM.render(<App />, document.getElementById('app'))
+        <h1>Home Page </h1>
+        <Main />
+    </div>,
+    document.getElementById('app'));

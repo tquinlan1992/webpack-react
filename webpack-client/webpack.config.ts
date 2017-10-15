@@ -1,9 +1,10 @@
 const appRoot = require('app-root-path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const htmlWebpackTemplate = require('html-webpack-template');
-import awesomeTypescripLoaderUtil from './util/awesome-typescript-loader';
-import sourceMapLoaderUtil from './util/source-map-loader';
-import sassLoaderUtil from './util/sassLoader';
+import tquinlan1992WebpackUtil from 'tquinlan1992-webpack-util';
+const sourceMapLoaderUtil = tquinlan1992WebpackUtil.sourceMapLoader;
+const sassLoaderUtil = tquinlan1992WebpackUtil.sassLoader;
+const awesomeTypescripLoaderUtil = tquinlan1992WebpackUtil.awesomeTypescriptLoader;
 
 const entry : string = appRoot + '/src/app.tsx';
 const build = appRoot + '/build';

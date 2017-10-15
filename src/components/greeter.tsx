@@ -1,6 +1,6 @@
 import * as moment from 'moment';
 import * as React from 'react';
-import ChangeGreeting from './changeGreeting';
+import ChangeGreetingToDave from './ChangeGreetingToDave';
 
 class Main extends React.Component<any, any> {
     constructor(props: any) {
@@ -19,7 +19,7 @@ class Main extends React.Component<any, any> {
         return (
             <div>
             <p>{ greeting } </p>
-            <ChangeGreeting changeAdjective={ this.changeAdjective }/>
+            <ChangeGreetingToDave changeAdjective={ this.changeAdjective }/>
             </div>
         )
     }

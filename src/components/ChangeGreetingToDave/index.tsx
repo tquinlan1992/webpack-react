@@ -1,4 +1,4 @@
-import ChangeGreeting from './ChangeGreeting';
+import ChangeGreeting from '../ChangeGreeting';
 
 class ChangeGreetingToDave extends ChangeGreeting {
     falseValue = 'dave ';

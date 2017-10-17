@@ -1,6 +1,6 @@
 import * as moment from 'moment';
 import * as React from 'react';
-import ChangeGreetingToDave from './ChangeGreetingToDave';
+import ChangeGreetingToDave from '../ChangeGreetingToDave';
 
 class Main extends React.Component<any, any> {
     constructor(props: any) {

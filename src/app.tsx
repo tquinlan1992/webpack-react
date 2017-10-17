@@ -1,4 +1,4 @@
-import Main from './components/greeter';
+import Main from './components/Greeter';
 //import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import './style/index.scss';
 import * as React from 'react';

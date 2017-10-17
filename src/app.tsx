@@ -5,7 +5,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 //import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import AppBar from './components/AppBar/AppBar';
-import Theme from './components/theme/Theme';
+import Theme from './components/Theme/Theme';
 
 ReactDOM.render(
     <Theme>

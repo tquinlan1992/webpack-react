@@ -1,6 +1,15 @@
 import * as React from 'react';
 import AppBarMaterialUi from 'material-ui/AppBar';
-import './index.scss';
+import {Tabs, Tab} from 'material-ui/Tabs';
+const styles = {
+  appBar: {
+    flexWrap: 'wrap',
+  },
+  tabs: {
+    width: '100%',
+  },
+};
+//import './index.scss';
 const qaLogo = require('./qa_logo.png');
 
 class AppBar extends React.Component<any, any> {
@@ -12,8 +21,13 @@ class AppBar extends React.Component<any, any> {
     public render() {
         return (
             <div>
-            <img src={qaLogo}/>
                 <AppBarMaterialUi className='AppBar' title="Title" iconClassNameRight="muidocs-icon-navigation-expand-more">
+                <Tabs style={styles.tabs}>
+                <img src={qaLogo} />
+                  <Tab label='first tab'>first tab text</Tab>
+                  <Tab label='second tab'>second tab text</Tab>
+                  <Tab label='third tab'>third tab text</Tab>
+                </Tabs>
                 </AppBarMaterialUi>
             </div>
         )

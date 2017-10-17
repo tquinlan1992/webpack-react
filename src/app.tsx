@@ -1,9 +1,9 @@
 import Main from './components/greeter';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import './index.scss';
+import './style/index.scss';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import AppBar from 'material-ui/AppBar';
+import AppBar from './components/AppBar/AppBar';
 
 
 ReactDOM.render(
@@ -15,4 +15,5 @@ ReactDOM.render(
             <Main />
         </div>
     </MuiThemeProvider>,
-    document.getElementById('app'));
+    document.getElementById('app')
+);

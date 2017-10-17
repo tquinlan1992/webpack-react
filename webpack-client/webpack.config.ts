@@ -6,7 +6,7 @@ const sourceMapLoaderUtil = tquinlan1992WebpackUtil.sourceMapLoader;
 const sassLoaderUtil = tquinlan1992WebpackUtil.sassLoader;
 const awesomeTypescripLoaderUtil = tquinlan1992WebpackUtil.awesomeTypescriptLoader;
 
-const entry : string = appRoot + '/src/app.tsx';
+const entry: string = appRoot + '/src/app.tsx';
 const build = appRoot + '/build';
 const appOutputPath = build;
 const appOutputFilename = 'app.js';
@@ -34,7 +34,15 @@ export default {
         rules: [
             awesomeTypescripLoaderUtil(tsconfig),
             sourceMapLoaderUtil,
-            sassLoaderUtil
+            sassLoaderUtil,
+            {
+                test: /\.(jpg|png|svg)$/,
+                loader: 'url-loader',
+                options: {
+                    limit: 2,
+                    name: './images[path][name].[ext]'
+                }
+            }
         ]
     },
     plugins: [new HtmlWebpackPlugin({

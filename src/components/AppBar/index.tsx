@@ -9,7 +9,6 @@ const styles = {
     width: '100%',
   },
 };
-//import './index.scss';
 const qaLogo = require('./qa_logo.png');
 
 class AppBar extends React.Component<any, any> {

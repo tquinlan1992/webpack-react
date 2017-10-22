@@ -34,7 +34,7 @@ export default {
             awesomeTypescripLoaderUtil(tsconfig),
             sourceMapLoaderUtil,
             sassLoaderUtil,
-            urlLoaderUtil({ path: './images', limit: 250 })
+            urlLoaderUtil({ path: './images/', limit: 250 })
         ]
     },
     plugins: [

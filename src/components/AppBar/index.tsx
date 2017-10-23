@@ -23,9 +23,9 @@ class AppBar extends React.Component<any, any> {
                 <AppBarMaterialUi className='AppBar' title="Title" iconClassNameRight="muidocs-icon-navigation-expand-more">
                 <Tabs style={styles.tabs}>
                 <img src={qaLogo} />
-                  <Tab label='first tab'>first tab text</Tab>
-                  <Tab label='second tab'>second tab text</Tab>
-                  <Tab label='third tab'>third tab text</Tab>
+                  <Tab label='first tab'>First tab in docker text</Tab>
+                  <Tab label='second tab'>Second tab text</Tab>
+                  <Tab label='third tab'>Third tab text</Tab>
                 </Tabs>
                 </AppBarMaterialUi>
             </div>

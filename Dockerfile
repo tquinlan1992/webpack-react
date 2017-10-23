@@ -1,9 +1,9 @@
 FROM tquinlan1992/debian-nvm
 
-COPY . /src/
+COPY . /client-app/
 
 RUN . /etc/profile && \
-	cd /src && \
+	cd /client-app && \
 	nvm install && \
 	npm install && \
     npm run build-client
@@ -11,6 +11,6 @@ RUN . /etc/profile && \
 EXPOSE 8000
 
 CMD . /etc/profile \
-    && cd /src \
+    && cd /client-app \
     && nvm use \
     && npm run webpack-client-dev-server

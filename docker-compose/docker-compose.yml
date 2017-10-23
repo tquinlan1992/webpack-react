@@ -9,6 +9,9 @@ services:
        - type: bind
          source: ../src
          target: /client-app/src
+       - type: bind
+         source: ../webpack-client
+         target: /client-app/webpack-client
     ports:
       - "8000:8000"
 

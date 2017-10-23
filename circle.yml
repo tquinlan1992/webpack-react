@@ -1,11 +1,15 @@
 machine:
   node:
       version: 6.11.4
+  services:
+      - docker
 
 dependencies:
   override:
+      - docker info
       - npm install
 
 test:
   override:
       - npm run build-client
+      - docker build --rm=false -t $DOCKER_USER/webpack-react:$CIRCLE_BRANCH .

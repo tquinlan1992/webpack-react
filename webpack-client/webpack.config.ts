@@ -16,7 +16,7 @@ const appOutputPath = build;
 const appOutputFilename = 'app.js';
 const tsconfig = appRoot + '/tsconfig.json';
 const extensions = [".ts", ".tsx", ".js", ".json"];
-const htmlTitle = "Webpack-Angular";
+const htmlTitle = "Webpack-React";
 const htmlAppMountId = 'app';
 
 export default {
@@ -34,7 +34,7 @@ export default {
             awesomeTypescripLoaderUtil(tsconfig),
             sourceMapLoaderUtil,
             sassLoaderUtil,
-            urlLoaderUtil({ path: './images', limit: 250 })
+            urlLoaderUtil({ path: './images/', limit: 250 })
         ]
     },
     plugins: [

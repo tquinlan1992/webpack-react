@@ -1,0 +1,19 @@
+version: '3.2'
+
+services:
+  client:
+    image: tquinlan1992/webpack-react:docker
+    build:
+        context: ../
+    volumes:
+       - type: bind
+         source: ../src
+         target: /client-app/src
+       - type: bind
+         source: ../webpack-client
+         target: /client-app/webpack-client
+    ports:
+      - "8000:8000"
+
+volumes:
+  data: {}

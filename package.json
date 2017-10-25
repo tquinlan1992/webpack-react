@@ -7,8 +7,7 @@
         "build-client": "cd ./webpack-client && webpack -p",
         "watch-client": "cd ./webpack-client && webpack --watch",
         "webpack-client-dev-server": "cd ./webpack-client && webpack-dev-server --host=0.0.0.0 --port 8000",
-        "testAppBar": "jest src/components/AppBar/test.tsx",
-        "testEnzyme": "ts-node src/components/AppBar/testWithEnzyme.tsx"
+        "test": "jest"
     },
     "author": "",
     "license": "ISC",
@@ -38,7 +37,7 @@
         "transform": {
             "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
         },
-        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+        "testRegex": "(/__src__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
         "moduleFileExtensions": [
             "ts",
             "tsx",

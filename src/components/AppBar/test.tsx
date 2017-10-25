@@ -16,9 +16,8 @@ test('see app bar', () => {
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
 
-    tree.props.onClick();
+    component.toJSON().children[0].props.onClick();
 
-    console.log("tree.props.onClick", tree.props.onClick);
     tree = component.toJSON();
     expect(tree).toMatchSnapshot();
 

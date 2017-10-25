@@ -25,12 +25,10 @@ class AppBar extends React.Component<any, any> {
 
     public render() {
         return (
-            <AppBarMaterialUi className='AppBar' title="Title" iconClassNameRight="muidocs-icon-navigation-expand-more">
+            <AppBarMaterialUi className='AppBar' onLeftIconButtonTouchTap={this.changeHeader} title="Title" iconClassNameRight="muidocs-icon-navigation-expand-more">
                 <Tabs style={styles.tabs}>
-                    <img src={qaLogo} />
-                    <Tab label='first tab'>
-                        <h1 onClick={this.changeHeader}>{this.state.header}</h1>First tab a new in docker text</Tab>
-                    <Tab label='second tab'>Second tab text</Tab>
+                    <Tab label='first tab'>{this.state.header} First tab a new in docker text</Tab>
+                    <Tab label='second tab'>Second tab text <img src={qaLogo} /></Tab>
                     <Tab label='third tab'>Third tab text</Tab>
                 </Tabs>
             </AppBarMaterialUi>

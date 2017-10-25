@@ -9,7 +9,7 @@ import Theme from './components/Theme';
 
 ReactDOM.render(
     <Theme>
-        <AppBar title="Title" iconClassNameRight="muidocs-icon-navigation-expand-more">
+        <AppBar title="Title" iconClassNameRight="muidocs-icon-navigation-expand-more" header="Header is working" headerChangeText="header changed">
         </AppBar>
         <div>
             <h1>Home Page </h1>

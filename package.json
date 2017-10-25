@@ -1,53 +1,53 @@
 {
-    "name": "webpack-react",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "build-client": "cd ./webpack-client && webpack -p",
-        "watch-client": "cd ./webpack-client && webpack --watch",
-        "webpack-client-dev-server": "cd ./webpack-client && webpack-dev-server --host=0.0.0.0 --port 8000",
-        "test": "jest"
+  "name": "webpack-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-client": "cd ./webpack-client && webpack -p",
+    "watch-client": "cd ./webpack-client && webpack --watch",
+    "webpack-client-dev-server": "cd ./webpack-client && webpack-dev-server --host=0.0.0.0 --port 8000",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^21.1.5",
+    "@types/react-test-renderer": "^16.0.0",
+    "app-root-path": "^2.0.1",
+    "jest": "^21.2.1",
+    "react-test-renderer": "^16.0.0",
+    "tquinlan1992-webpack-util": "^1.0.4",
+    "ts-jest": "^21.1.3",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.3",
+    "webpack": "^3.7.1",
+    "webpack-dev-server": "^2.9.2"
+  },
+  "dependencies": {
+    "@types/material-ui": "^0.18.3",
+    "@types/react": "^16.0.10",
+    "@types/react-dom": "^16.0.1",
+    "material-ui": "^0.19.4",
+    "moment": "^2.19.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "@types/jest": "^21.1.4",
-        "@types/react-test-renderer": "^16.0.0",
-        "app-root-path": "^2.0.1",
-        "jest": "^21.2.1",
-        "react-test-renderer": "^16.0.0",
-        "tquinlan1992-webpack-util": "^1.0.4",
-        "ts-jest": "^21.1.3",
-        "ts-node": "^3.3.0",
-        "typescript": "^2.5.3",
-        "webpack": "^3.7.1",
-        "webpack-dev-server": "^2.9.2"
-    },
-    "dependencies": {
-        "@types/material-ui": "^0.18.3",
-        "@types/react": "^16.0.10",
-        "@types/react-dom": "^16.0.1",
-        "material-ui": "^0.19.4",
-        "moment": "^2.19.1",
-        "react": "^16.0.0",
-        "react-dom": "^16.0.0"
-    },
-    "jest": {
-        "transform": {
-            "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-        },
-        "testRegex": "(/__src__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-        "moduleFileExtensions": [
-            "ts",
-            "tsx",
-            "js",
-            "jsx",
-            "json"
-        ],
-        "moduleNameMapper": {
-            "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/jestUtil/assetsTransformer.js",
-            "\\.(css|less)$": "<rootDir>/jestUtil/assetsTransformer.js"
-        }
+    "testRegex": "(/__src__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/jestUtil/assetsTransformer.js",
+      "\\.(css|less)$": "<rootDir>/jestUtil/assetsTransformer.js"
     }
+  }
 }

@@ -1,5 +1,6 @@
 const appRoot = require('app-root-path');
 import tquinlan1992WebpackUtil from 'tquinlan1992-webpack-util';
+import * as CopyWebpackPlugin from 'copy-webpack-plugin';
 
 const {
     sourceMapLoader: sourceMapLoaderUtil,
@@ -38,6 +39,9 @@ export default {
         ]
     },
     plugins: [
-        htmlWebpackPluginUtil({ htmlTitle, htmlAppMountId })
+        htmlWebpackPluginUtil({ htmlTitle, htmlAppMountId }),
+        new CopyWebpackPlugin([
+            { context: '../src', from: 'public/**/*'},
+        ])
     ]
 };

@@ -1,0 +1,11 @@
+import axios from 'axios';
+
+const getConfigsPromise = new Promise((resolve, reject) => {
+    axios.get(`/public/environment.json`)
+        .then((res: any) => {
+            console.log("res", res);
+            resolve(res.data);
+        });    
+});
+
+export default getConfigsPromise;

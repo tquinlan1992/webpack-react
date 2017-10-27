@@ -34,3 +34,6 @@ Tests are run using jest
 - Tests
 
 #### Running bash
+
+#### docker-compose
+[a relative link](./docker-compose/README.md)

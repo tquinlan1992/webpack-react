@@ -7,7 +7,9 @@
     "build-client": "cd ./webpack-client && webpack -p",
     "watch-client": "cd ./webpack-client && webpack --watch",
     "webpack-client-dev-server": "cd ./webpack-client && webpack-dev-server --host=0.0.0.0 --port 8000",
-    "test": "jest"
+    "test": "jest",
+    "tquinlan1992Webpack": "ts-node webpack-client/tquinlan1992.config.ts",
+    "tquinlan1992WebpackServer": "ts-node webpack-client/tquinlan1992devserver.config.ts"
   },
   "author": "",
   "license": "ISC",

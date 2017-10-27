@@ -12,6 +12,7 @@ test('see app bar', () => {
             <AppBar title="Title2" iconClassNameRight="muidocs-icon-navigation-expand-more" header={header} headerChangeText="header changed">Facebook</AppBar>
         </MuiThemeProvider>
     );
+    debugger;
 
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();

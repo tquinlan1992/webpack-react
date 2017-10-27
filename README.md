@@ -17,3 +17,20 @@ https://docs.docker.com/engine/installation/
 
 1. After the container is running you're able to run ```docker cp <container id>:/client-app/node_modules ./node_modules``` from the root directory of the repository
     - This enables IDEs/text-editors to have access to the modules.  The docker container is reading from its own company still with webpack-dev-server
+
+#### Tests
+Tests are run using jest
+- To run all Tests
+    - ```npm test```
+    - to run a specific test there are 2 recommended ways
+        1. By installing Jest with the -global flag
+            1. Install jest with -global flag ```npm install -global jest```
+            2. Run specific test file ```jest <file path```
+        2. Using jest from node_modules
+            1. On a Mac
+                - ```./node_modules/jest/bin/jest.js <file-path>
+
+#### Debugging
+- Tests
+
+#### Running bash

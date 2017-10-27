@@ -1,0 +1,7 @@
+{
+    "entry": "/src/app.tsx",
+    "appOutputFilename": "app.js",
+    "appOutputPath": "/build",
+    "htmlTitle": "Webpack-React",
+    "tsconfig": "/tsconfig.json"
+}

@@ -1,47 +1,13 @@
 const appRoot = require('app-root-path');
-import tquinlan1992WebpackUtil from 'tquinlan1992-webpack-util';
-import * as CopyWebpackPlugin from 'copy-webpack-plugin';
+import createWebpackPlugin from 'tquinlan1992-webpack-util';
 
-const {
-    sourceMapLoader: sourceMapLoaderUtil,
-    sassLoader: sassLoaderUtil,
-    awesomeTypescriptLoader: awesomeTypescripLoaderUtil,
-    urlLoader: urlLoaderUtil,
-    htmlWebpackPlugin: htmlWebpackPluginUtil
 
-} = tquinlan1992WebpackUtil;
+const tquinlan1992WebpackUtilJSON = require('./tquinlan1992-webpack-util.json');
 
-const entry: string = appRoot + '/src/app.tsx';
-const build = appRoot + '/build';
-const appOutputPath = build;
-const appOutputFilename = 'app.js';
-const tsconfig = appRoot + '/tsconfig.json';
-const extensions = [".ts", ".tsx", ".js", ".json"];
-const htmlTitle = "Webpack-React";
-const htmlAppMountId = 'app';
+const absolutePathsConfig = Object.assign(tquinlan1992WebpackUtilJSON, {
+    entry: appRoot + tquinlan1992WebpackUtilJSON.entry,
+    appOutputPath: appRoot + tquinlan1992WebpackUtilJSON.appOutputPath,
+    tsconfig: appRoot + tquinlan1992WebpackUtilJSON.tsconfig
+})
 
-export default {
-    entry: entry,
-    output: {
-        filename: appOutputFilename,
-        path: appOutputPath
-    },
-    devtool: "source-map",
-    resolve: {
-        extensions: extensions
-    },
-    module: {
-        rules: [
-            awesomeTypescripLoaderUtil(tsconfig),
-            sourceMapLoaderUtil,
-            sassLoaderUtil,
-            urlLoaderUtil({ path: './images/', limit: 250 })
-        ]
-    },
-    plugins: [
-        htmlWebpackPluginUtil({ htmlTitle, htmlAppMountId }),
-        new CopyWebpackPlugin([
-            { context: '../src', from: 'public/**/*'},
-        ])
-    ]
-};
+export default createWebpackPlugin(absolutePathsConfig);

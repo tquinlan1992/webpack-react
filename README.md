@@ -28,7 +28,7 @@ Tests are run using jest
             2. Run specific test file ```jest <file path```
         2. Using jest from node_modules
             1. On a Mac
-                - ```./node_modules/jest/bin/jest.js <file-path>
+                - ```./node_modules/jest/bin/jest.js <file-path>```
 
 #### Debugging
 - Tests

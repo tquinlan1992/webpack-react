@@ -3,5 +3,7 @@
     "appOutputFilename": "app.js",
     "appOutputPath": "/build",
     "htmlTitle": "Webpack-React",
-    "tsconfig": "/tsconfig.json"
+    "tsconfig": "/tsconfig.json",
+    "publicDir": "chandhini/**/*",
+    "publicDirContext": "../src"
 }

@@ -35,5 +35,4 @@ Tests are run using jest
 
 #### Running bash
 
-#### docker-compose
-[a relative link](./docker-compose/README.md)
+#### [docker-compose](./docker-compose/README.md)

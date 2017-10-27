@@ -8,6 +8,6 @@ const absolutePathsConfig = Object.assign(tquinlan1992WebpackUtilJSON, {
     entry: appRoot + tquinlan1992WebpackUtilJSON.entry,
     appOutputPath: appRoot + tquinlan1992WebpackUtilJSON.appOutputPath,
     tsconfig: appRoot + tquinlan1992WebpackUtilJSON.tsconfig
-})
+});
 
 export default createWebpackPlugin(absolutePathsConfig);

@@ -32,6 +32,11 @@ Tests are run using jest
 
 #### Debugging
 - Tests
+    - on Mac
+        1. run ```node --inspect --inspect-brk ./node_modules/jest/bin/jest.js```
+            - This will stop at the first line of code load
+            - It's recommended to add a debugger in your code as all the files will not be loaded when the debugger is brought up
+        2. Run the following with the websocket path that's returned ```chrome-devtools://devtools/bundled/inspector.html?experiments=true&v8only=true&ws=<websocket path>```
 
 #### Running bash
 

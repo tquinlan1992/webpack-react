@@ -2,4 +2,3 @@ build
 node_modules
 npm-debug.log
 tquinlan1992-webpack-util
-package-lock.json

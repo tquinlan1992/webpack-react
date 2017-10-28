@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build-client": "tquinlan1992-webpack-util",
-    "watch-client": "tquinlan1992-webpack-util --config ./tquinlan1992-webpack-util.json -w",
-    "dev-server": "tquinlan1992-webpack-util --config ./tquinlan1992-webpack-util.json -d",
+    "watch-client": "tquinlan1992-webpack-util -w",
+    "dev-server": "tquinlan1992-webpack-util -d",
     "test": "jest"
   },
   "author": "",

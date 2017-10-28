@@ -1,6 +1,13 @@
 machine:
+  node:
+      version: stable
   services:
       - docker
+
+dependencies:
+  override:
+      - docker info
+      - npm install
 
 test:
   override:

@@ -3,6 +3,6 @@
     "appOutputFilename": "app.js",
     "appOutputPath": "/build",
     "htmlTitle": "Webpack-React",
-    "publicDir": "public/**/*",
-    "publicDirContext": "/src"
+    "publicDirSrc": "/src/public/**/*",
+    "publicDirOut": "/public"
 }

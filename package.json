@@ -6,7 +6,7 @@
   "scripts": {
     "build-client": "tquinlan1992-webpack-util --config ./tquinlan1992-webpack-util.json",
     "watch-client": "tquinlan1992-webpack-util --config ./tquinlan1992-webpack-util.json -w",
-    "webpack-client-dev-server": "tquinlan1992-webpack-util --config ./tquinlan1992-webpack-util.json -d",
+    "dev-server": "tquinlan1992-webpack-util --config ./tquinlan1992-webpack-util.json -d",
     "test": "jest"
   },
   "author": "",

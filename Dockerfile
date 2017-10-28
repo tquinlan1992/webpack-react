@@ -14,4 +14,4 @@ EXPOSE 8000
 CMD . /etc/profile \
     && cd /client-app \
     && nvm use \
-    && npm run webpack-client-dev-server
+    && npm run dev-server

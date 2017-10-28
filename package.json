@@ -15,7 +15,6 @@
     "@types/jest": "^21.1.5",
     "@types/react-test-renderer": "^16.0.0",
     "jest": "^21.2.1",
-    "jsonfile": "^4.0.0",
     "react-test-renderer": "^16.0.0",
     "tquinlan1992-webpack-util": "^2.0.0",
     "ts-jest": "^21.1.3",

@@ -3,7 +3,6 @@
     "appOutputFilename": "app.js",
     "appOutputPath": "/build",
     "htmlTitle": "Webpack-React",
-    "tsconfig": "/tsconfig.json",
     "publicDir": "public/**/*",
     "publicDirContext": "/src"
 }

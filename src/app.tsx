@@ -6,14 +6,20 @@ import * as ReactDOM from 'react-dom';
 //import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import AppBar from './components/AppBar';
 import Theme from './components/Theme';
+import getEnvrionmentConfigs from './getEnvrionmentConfigs';
+getEnvrionmentConfigs.then((data: any) => {
+    console.log("data", data);
+});
 
 ReactDOM.render(
     <Theme>
-        <AppBar title="Title" iconClassNameRight="muidocs-icon-navigation-expand-more">
-        </AppBar>
         <div>
-            <h1>Home Page </h1>
-            <Main />
+            <AppBar title="Title" iconClassNameRight="muidocs-icon-navigation-expand-more" header="Header is working" headerChangeText="header changed">
+            </AppBar>
+            <div>
+                <h1>Home Page </h1>
+                <Main />
+            </div>
         </div>
     </Theme>,
     document.getElementById('app')

@@ -6,6 +6,7 @@ RUN . /etc/profile && \
 	cd /client-app && \
 	nvm install && \
 	npm install && \
+	npm test && \
     npm run build-client
 
 EXPOSE 8000

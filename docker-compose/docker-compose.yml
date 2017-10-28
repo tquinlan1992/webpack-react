@@ -13,7 +13,7 @@ services:
          source: ../webpack-client
          target: /client-app/webpack-client
     ports:
-      - "8000:8000"
+      - "8080:8080"
 
 volumes:
   data: {}

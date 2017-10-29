@@ -1,7 +1,7 @@
 # webpack-react
 [![CircleCI](https://circleci.com/gh/tquinlan1992/webpack-react.svg?style=svg)](https://circleci.com/gh/tquinlan1992/webpack-react)
 [![Docker Build Status](https://img.shields.io/docker/build/tquinlan1992/webpack-react.svg)](https://hub.docker.com/r/tquinlan1992/webpack-react/)
-[![Dependencies](https://david-dm.org/tquinlan1992/webpack.svg)](https://david-dm.org/tquinlan1992/webpack-react)
+[![Dependencies](https://david-dm.org/tquinlan1992/webpack-react.svg)](https://david-dm.org/tquinlan1992/webpack-react)
 
 
 A project for building react apps using webpack with docker
@@ -17,7 +17,7 @@ https://docs.docker.com/engine/installation/
 4. run ```docker-compose up```
     - With the ```/src``` directory mounted and webpack-dev-server running within the container, file changes within the ```/src``` directory will trigger a build for webpack
     - When docker-compose is run for the first time an image is created.  To rebuild that image run ```docker-compose up``` with the ```--build``` flag
-    ```docker-compose up --build``` 
+    ```docker-compose up --build```
 
 #### Copying node_modules directory
 

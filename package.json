@@ -16,7 +16,7 @@
     "@types/react-test-renderer": "^16.0.0",
     "@types/shelljs": "^0.7.5",
     "react-test-renderer": "^16.0.0",
-    "tquinlan1992-webpack-util": "git+https://github.com/tquinlan1992/tquinlan1992-webpack-util.git#jestBin",
+    "tquinlan1992-webpack-util": "^2.0.14",
     "ts-node": "^3.3.0",
     "typescript": "^2.5.3"
   },

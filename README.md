@@ -40,7 +40,7 @@ Tests are run using jest
             - It's recommended to add a debugger in your code as all the files will not be loaded when the debugger is brought up
         2. Run the following with the websocket path that's returned ```chrome-devtools://devtools/bundled/inspector.html?experiments=true&v8only=true&ws=<websocket path>```
 
-#### Running bash, sourcing profile, changing to app directory (In docker container)
+#### In docker container - Running bash, sourcing profile, changing to app directory
 1. Go through the setup instructions so there is a ```docker-compose up``` container running
 2. run ```docker exec -it webpack-react bash```
     - exec -it allows a command to be run on the container specified in the next parameter

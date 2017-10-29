@@ -1,4 +1,5 @@
 # webpack-react
+[![CircleCI](https://circleci.com/gh/tquinlan1992/webpack-react.svg?style=svg)](https://circleci.com/gh/tquinlan1992/webpack-react)
 
 A project for building react apps using webpack with docker
 

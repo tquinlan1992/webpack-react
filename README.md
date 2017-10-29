@@ -16,6 +16,8 @@ https://docs.docker.com/engine/installation/
     - It is set up to expose port ```8000```, the port the webpack-dev-server is running on, and is map it to port ```8000```
 4. run ```docker-compose up```
     - With the ```/src``` directory mounted and webpack-dev-server running within the container, file changes within the ```/src``` directory will trigger a build for webpack
+    - When docker-compose is run for the first time an image is created.  To rebuild that image run ```docker-compose up``` with the ```--build``` flag
+    ```docker-compose up --build``` 
 
 #### Copying node_modules directory
 

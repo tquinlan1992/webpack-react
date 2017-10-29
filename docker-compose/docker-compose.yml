@@ -11,8 +11,8 @@ services:
          source: ../src
          target: /client-app/src
        - type: bind
-         source: ../webpack-client
-         target: /client-app/webpack-client
+         source: ../tquinlan1992-webpack-util.config.json
+         target: /client-app/tquinlan1992-webpack-util.config.json
     ports:
       - "8080:8080"
 

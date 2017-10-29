@@ -7,17 +7,16 @@
     "build-client": "tquinlan1992-webpack-util",
     "watch-client": "tquinlan1992-webpack-util -w",
     "dev-server": "tquinlan1992-webpack-util -d",
-    "test": "jest"
+    "test": "jest --config jest.config.js",
+    "runJest": "tquinlan1992-webpack-util-jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/jest": "^21.1.5",
     "@types/react-test-renderer": "^16.0.0",
-    "jest": "^21.2.1",
+    "@types/shelljs": "^0.7.5",
     "react-test-renderer": "^16.0.0",
-    "tquinlan1992-webpack-util": "^2.0.0",
-    "ts-jest": "^21.1.3",
+    "tquinlan1992-webpack-util": "git+https://github.com/tquinlan1992/tquinlan1992-webpack-util.git#jestBin",
     "ts-node": "^3.3.0",
     "typescript": "^2.5.3"
   },
@@ -29,6 +28,7 @@
     "material-ui": "^0.19.4",
     "moment": "^2.19.1",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "shelljs": "^0.7.8"
   }
 }

@@ -4,5 +4,5 @@
     "appOutputPath": "/build",
     "htmlTitle": "Webpack-React",
     "publicDirSrc": "/src/public/**/*",
-    "publicDirOut": "/public"
+    "publicDirOut": "/"
 }

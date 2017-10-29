@@ -2,7 +2,8 @@ version: '3.2'
 
 services:
   client:
-    image: tquinlan1992/webpack-react:docker
+    image: tquinlan1992/webpack-react
+    container_name: webpack-react
     build:
         context: ../
     volumes:

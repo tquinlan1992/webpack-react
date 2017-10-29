@@ -22,24 +22,32 @@ https://docs.docker.com/engine/installation/
 
 #### Tests
 Tests are run using jest
-- To run all Tests
+- To run all Tests and In docker container
     - ```npm test```
     - to run a specific test there are 2 recommended ways
         1. By installing Jest with the -global flag
             1. Install jest with -global flag ```npm install -global jest```
-            2. Run specific test file ```jest <file path```
+            2. Run specific test file ```jest <file path>```
         2. Using jest from node_modules
             1. On a Mac
                 - ```./node_modules/jest/bin/jest.js <file-path>```
 
 #### Debugging
 - Tests
-    - on Mac
+    - on Mac and In docker container
         1. run ```node --inspect --inspect-brk ./node_modules/jest/bin/jest.js```
             - This will stop at the first line of code load
             - It's recommended to add a debugger in your code as all the files will not be loaded when the debugger is brought up
         2. Run the following with the websocket path that's returned ```chrome-devtools://devtools/bundled/inspector.html?experiments=true&v8only=true&ws=<websocket path>```
 
-#### Running bash
+#### Running bash, sourcing profile, changing to app directory (In docker container)
+1. Go through the setup instructions so there is a ```docker-compose up``` container running
+2. run ```docker exec -it webpack-react bash```
+    - exec -it allows a command to be run on the container specified in the next parameter
+    - ```webpack-react``` is the name of the docker-compose image that's specified in the ```docker-compose.yml```
+    - The last ```bash``` param executes bash on the container
+3. run ```. /etc/profile \``` to source the profile
+    - This allows the use of npm commands
+4. The app is stored in the root directory under ```/client-app```.  run ```cd /client-app``` to change into the directory
 
 #### [docker-compose](./docker-compose/README.md)

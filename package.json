@@ -7,7 +7,7 @@
     "build-client": "tquinlan1992-webpack-util",
     "watch-client": "tquinlan1992-webpack-util -w",
     "dev-server": "tquinlan1992-webpack-util -d",
-    "test": "jest --config jest.config.js",
+    "test": "tquinlan1992-webpack-util-jest",
     "runJest": "tquinlan1992-webpack-util-jest"
   },
   "author": "",
@@ -24,6 +24,7 @@
     "@types/material-ui": "^0.18.3",
     "@types/react": "^16.0.10",
     "@types/react-dom": "^16.0.1",
+    "@types/jest": "^21.1.5",
     "axios": "^0.17.0",
     "material-ui": "^0.19.4",
     "moment": "^2.19.1",

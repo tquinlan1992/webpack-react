@@ -50,7 +50,7 @@ Tests are run using jest
     - exec -it allows a command to be run on the container specified in the next parameter
     - ```webpack-react``` is the name of the docker-compose image that's specified in the ```docker-compose.yml```
     - The last ```bash``` param executes bash on the container
-3. run ```. /etc/profile \``` to source the profile
+3. run ```. /etc/profile``` to source the profile
     - This allows the use of npm commands
 4. The app is stored in the root directory under ```/client-app```.  run ```cd /client-app``` to change into the directory
 

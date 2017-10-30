@@ -8,14 +8,15 @@
     "watch-client": "tquinlan1992-webpack-util -w",
     "dev-server": "tquinlan1992-webpack-util -d",
     "test": "tquinlan1992-webpack-util-jest",
-    "test-watch": "tquinlan1992-webpack-util-jest --watchAll"
+    "test-watch": "tquinlan1992-webpack-util-jest --watchAll",
+    "test-debug": "tquinlan1992-webpack-util-jest -d"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/react-test-renderer": "^16.0.0",
     "react-test-renderer": "^16.0.0",
-    "tquinlan1992-webpack-util": "^2.0.31",
+    "tquinlan1992-webpack-util": "^2.0.35",
     "ts-node": "^3.3.0",
     "typescript": "^2.5.3"
   },

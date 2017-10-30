@@ -25,16 +25,16 @@ https://docs.docker.com/engine/installation/  and Docker Compose https://docs.do
     - This enables IDEs/text-editors to have access to the modules.  The docker container is reading from its own company still with webpack-dev-server
 
 #### Tests
-Tests are run using jest
+Tests are run using a wrapper around jest, tquinlan1992-webpack-util-jest
 - To run all Tests and In docker container
     - ```npm test```
     - to run a specific test there are 2 recommended ways
         1. By installing Jest with the -global flag
-            1. Install jest with -global flag ```npm install -global jest```
-            2. Run specific test file ```jest <file path>```
+            1. Install jest with -global flag ```npm install -global tquinlan1992-webpack-util-jest```
+            2. Run specific test file ```tquinlan1992-webpack-util-jest <file path>```
         2. Using jest from node_modules
             1. On a Mac
-                - ```./node_modules/jest/bin/jest.js <file-path>```
+                - ```./node_modules/tquinlan1992-webpack-util/dist/src/jest/index.js <file-path>```
 
 #### Debugging
 - Tests

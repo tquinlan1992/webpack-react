@@ -4,5 +4,6 @@
     "appOutputPath": "/build",
     "htmlTitle": "Webpack-React",
     "publicDirSrc": "/src/public/**/*",
-    "publicDirOut": "/"
+    "publicDirOut": "/",
+    "tsconfig": "/src/tsconfig.json"
 }

@@ -8,7 +8,7 @@
     "watch-client": "tquinlan1992-webpack-util -w",
     "dev-server": "tquinlan1992-webpack-util -d",
     "test": "tquinlan1992-webpack-util-jest",
-    "runJest": "tquinlan1992-webpack-util-jest"
+    "runJest": "tquinlan1992-webpack-util-jest --updateSnapshot"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +16,7 @@
     "@types/react-test-renderer": "^16.0.0",
     "@types/shelljs": "^0.7.5",
     "react-test-renderer": "^16.0.0",
-    "tquinlan1992-webpack-util": "^2.0.16",
+    "tquinlan1992-webpack-util": "^2.0.18",
     "ts-node": "^3.3.0",
     "typescript": "^2.5.3"
   },

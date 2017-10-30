@@ -21,7 +21,7 @@ https://docs.docker.com/engine/installation/
 
 #### Copying node_modules directory
 
-1. After the container is running you're able to run ```docker cp <container id>:/client-app/node_modules ./node_modules``` from the root directory of the repository
+1. After the container is running you're able to run ```docker cp webpack-react:/client-app/node_modules ./node_modules``` from the root directory of the repository
     - This enables IDEs/text-editors to have access to the modules.  The docker container is reading from its own company still with webpack-dev-server
 
 #### Tests

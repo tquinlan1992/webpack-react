@@ -9,7 +9,7 @@ A project for building react apps using webpack with docker
 ### Setup
 
 1. Install the latest version of Docker
-https://docs.docker.com/engine/installation/
+https://docs.docker.com/engine/installation/  and Docker Compose https://docs.docker.com/compose/install/#install-compose
 2. ```git clone https://github.com/tquinlan1992/webpack-react.git``` into a location of your choice
 3. ```cd <cloned repository path>/docker-compose```
     - This directory holds the ```docker-compose.yml``` that mounts your host ```/src``` directory to the container's ```/src``` directory

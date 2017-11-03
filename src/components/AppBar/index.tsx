@@ -1,6 +1,9 @@
 import * as React from 'react';
 import AppBarMaterialUi from 'material-ui/AppBar';
 import { Tabs, Tab } from 'material-ui/Tabs';
+import {
+  Link
+} from 'react-router-dom'
 const styles = {
     appBar: {
         flexWrap: 'wrap',
@@ -29,7 +32,7 @@ class AppBar extends React.Component<any, any> {
                 <Tabs style={styles.tabs}>
                     <Tab label='first tab'>{this.state.header} First tab a new in docker text</Tab>
                     <Tab label='second tab'>Second tab text <img src={qaLogo} /></Tab>
-                    <Tab label='third tab'>Third tab text</Tab>
+                    <Tab label='third tab'><Link to="/test">Third tab text</Link></Tab>
                 </Tabs>
             </AppBarMaterialUi>
         )

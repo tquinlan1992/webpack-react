@@ -7,27 +7,32 @@
     "build-client": "tquinlan1992-webpack-util",
     "watch-client": "tquinlan1992-webpack-util -w",
     "dev-server": "tquinlan1992-webpack-util -d",
-    "test": "tquinlan1992-webpack-util-jest",
-    "test-watch": "tquinlan1992-webpack-util-jest --watchAll"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^21.1.5",
+    "@types/react-router": "^4.0.16",
     "@types/react-test-renderer": "^16.0.0",
+    "jest": "^21.2.1",
     "react-test-renderer": "^16.0.0",
-    "tquinlan1992-webpack-util": "^2.0.31",
+    "tquinlan1992-webpack-util": "^2.0.39",
+    "ts-jest": "^21.1.3",
     "ts-node": "^3.3.0",
-    "typescript": "^2.5.3"
+    "typescript": "^2.6.1"
   },
   "dependencies": {
     "@types/material-ui": "^0.18.3",
-    "@types/react": "^16.0.10",
+    "@types/react": "^16.0.19",
     "@types/react-dom": "^16.0.1",
-    "@types/jest": "^21.1.5",
+    "@types/react-router-dom": "^4.2.0",
     "axios": "^0.17.0",
     "material-ui": "^0.19.4",
     "moment": "^2.19.1",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
   }
 }

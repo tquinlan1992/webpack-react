@@ -3,14 +3,19 @@ import * as React from 'react';
 import AppBar from './index';
 import * as renderer from 'react-test-renderer';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import {
+    BrowserRouter
+} from 'react-router-dom';
 
 test('see app bar', () => {
     let header = "header is working";
 
     const component = renderer.create(
+        <BrowserRouter>
         <MuiThemeProvider>
             <AppBar title="Title2" iconClassNameRight="muidocs-icon-navigation-expand-more" header={header} headerChangeText="header changed">Facebook</AppBar>
         </MuiThemeProvider>
+        </BrowserRouter>
     );
     debugger;
 

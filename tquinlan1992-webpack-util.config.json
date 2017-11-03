@@ -5,5 +5,5 @@
     "htmlTitle": "Webpack-React",
     "publicDirSrc": "/src/public/**/*",
     "publicDirOut": "/",
-    "tsconfig": "/src/tsconfig.json"
+    "tsconfig": "/tsconfig.json"
 }

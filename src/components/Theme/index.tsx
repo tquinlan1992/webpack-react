@@ -5,13 +5,13 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 class Theme extends React.Component<any, any> {
     muiTheme = getMuiTheme({
         palette: {
-          primary1Color: 'white',
-          accent1Color: '#00D036',
-          alternateTextColor: '#00D036'
+            primary1Color: '#ffffff',
+            accent1Color: '#00D036',
+            alternateTextColor: '#00D036'
         },
-      appBar: {
-        height: 50
-      }
+        appBar: {
+            height: 50
+        }
     });
     constructor(props: any) {
         super(props);

@@ -446,12 +446,7 @@ exports[`see app bar 1`] = `
           }
         }
       >
-        <a
-          href="/test"
-          onClick={[Function]}
-        >
-          Third tab text
-        </a>
+        Third tab text2
       </div>
     </div>
   </div>
@@ -904,12 +899,7 @@ exports[`see app bar 2`] = `
           }
         }
       >
-        <a
-          href="/test"
-          onClick={[Function]}
-        >
-          Third tab text
-        </a>
+        Third tab text2
       </div>
     </div>
   </div>

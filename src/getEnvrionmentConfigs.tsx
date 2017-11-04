@@ -12,6 +12,8 @@ getConfigsPromise.then((res:any) => {
     axios.get(res.api + "/testRoute")
         .then((res: any) => {
             console.log("api test data", res.data);
+        }, (err: any) => {
+            console.log("err retreiving testRoute");
         });
 })
 

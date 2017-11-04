@@ -15,3 +15,4 @@ module.exports = {
     "\\.(css|less)$": "<rootDir>/node_modules/tquinlan1992-webpack-util/src/jest/assetsTransformer.js"
   }
 };
+

@@ -10,7 +10,8 @@ import getEnvrionmentConfigs from './getEnvrionmentConfigs';
 import {
     BrowserRouter,
     Route,
-    Link
+    Link,
+    withRouter
 } from 'react-router-dom';
 
 getEnvrionmentConfigs.then((data: any) => {
@@ -18,10 +19,10 @@ getEnvrionmentConfigs.then((data: any) => {
 });
 
 
-const App = () => (
+const App = withRouter(({history}) => (
     <Theme>
         <div>
-            <AppBar title="Title" iconClassNameRight="muidocs-icon-navigation-expand-more" header="Header is working" headerChangeText="header changed">
+            <AppBar history={history} title="Title" iconClassNameRight="muidocs-icon-navigation-expand-more" header="Header is working" headerChangeText="header changed">
 
             </AppBar>
             <div>
@@ -29,7 +30,7 @@ const App = () => (
             </div>
         </div>
     </Theme>
-);
+));
 
 const test = (params: { match: any }): any => (
     <div>

@@ -193,6 +193,7 @@ exports[`see app bar 1`] = `
         "width": "100%",
       }
     }
+    value="/first"
   >
     <div
       style={
@@ -646,6 +647,7 @@ exports[`see app bar 2`] = `
         "width": "100%",
       }
     }
+    value="/first"
   >
     <div
       style={

@@ -7,13 +7,19 @@ import {
     BrowserRouter
 } from 'react-router-dom';
 
+const mockHistory = {
+    location: {
+        pathname: "/first"
+    } 
+};
+
 test('see app bar', () => {
     let header = "header is working";
 
     const component = renderer.create(
         <BrowserRouter>
         <MuiThemeProvider>
-            <AppBar title="Title2" iconClassNameRight="muidocs-icon-navigation-expand-more" header={header} headerChangeText="header changed">Facebook</AppBar>
+            <AppBar history={mockHistory} title="Title2" iconClassNameRight="muidocs-icon-navigation-expand-more" header={header} headerChangeText="header changed">Facebook</AppBar>
         </MuiThemeProvider>
         </BrowserRouter>
     );

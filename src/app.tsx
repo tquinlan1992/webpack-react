@@ -32,11 +32,20 @@ const App = withRouter(({history}) => (
     </Theme>
 ));
 
-const test = (params: { match: any }): any => (
+const second = (params: { match: any }): any => (
     <div>
         <Link to="/">Go home</Link>
         <h1>
-            test
+            second
+        </h1>
+    </div>
+);
+
+const third = (params: { match: any }): any => (
+    <div>
+        <Link to="/">Go home</Link>
+        <h1>
+            third
         </h1>
     </div>
 );
@@ -49,8 +58,9 @@ ReactDOM.render(
     <BrowserRouter>
         <div>
             <App/>
-            <Route exact path="" component={home} />
-            <Route path="/test" component={test} />
+            <Route exact path="/first" component={home} />
+            <Route path="/second" component={second} />
+            <Route path="/third" component={third} />
         </div>
     </BrowserRouter>
     , document.getElementById('app')

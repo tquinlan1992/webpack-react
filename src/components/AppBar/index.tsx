@@ -1,8 +1,6 @@
 import * as React from 'react';
 import AppBarMaterialUi from 'material-ui/AppBar';
 import { Tabs, Tab } from 'material-ui/Tabs';
-import {
-} from 'react-router-dom';
 
 const styles = {
     appBar: {
@@ -26,17 +24,18 @@ class AppBar extends React.Component<any, any> {
         this.setState({ header: this.props.headerChangeText });
     }
 
-    goToTest = ():void => {
-        this.props.history.push("/test");
+    goToRoute = (evt: any): void => {
+        console.log("evt", evt);
+        this.props.history.push(evt.props.value);
     }
 
     public render() {
         return (
             <AppBarMaterialUi className='AppBar' onLeftIconButtonTouchTap={this.changeHeader} title="Title" iconClassNameRight="muidocs-icon-navigation-expand-more">
-                <Tabs style={styles.tabs}>
-                    <Tab label='first tab'>{this.state.header} First tab a new in docker text</Tab>
-                    <Tab label='second tab'>Second tab text <img src={qaLogo} /></Tab>
-                    <Tab label='third tab' onActive={this.goToTest}>Third tab text2</Tab>
+                <Tabs style={styles.tabs} value={this.props.history.location.pathname}>
+                    <Tab label='first tab' value="/first" onActive={this.goToRoute}>{this.state.header} First tab a new in docker text</Tab>
+                    <Tab label='second tab' value="/second" onActive={this.goToRoute}>Second tab text <img src={qaLogo} /></Tab>
+                    <Tab label='third tab' value="/third" onActive={this.goToRoute}>Third tab text2</Tab>
                 </Tabs>
             </AppBarMaterialUi>
         )

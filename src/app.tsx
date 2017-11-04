@@ -22,10 +22,10 @@ const App = () => (
     <Theme>
         <div>
             <AppBar title="Title" iconClassNameRight="muidocs-icon-navigation-expand-more" header="Header is working" headerChangeText="header changed">
-            
+
             </AppBar>
             <div>
-                <h1>Home Page </h1>
+                <h1>Home Page 19</h1>
             </div>
         </div>
     </Theme>

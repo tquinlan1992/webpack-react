@@ -9,7 +9,7 @@ const getConfigsPromise = new Promise((resolve, reject) => {
 });
 
 getConfigsPromise.then((res:any) => {
-    axios.get(res.api + "/test.json")
+    axios.get(res.api + "/testRoute")
         .then((res: any) => {
             console.log("api test data", res.data);
         });

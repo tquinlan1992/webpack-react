@@ -1,13 +1,17 @@
-FROM node:carbon
+FROM tquinlan1992/debian-nvm
 
 COPY . /client-app/
 
-RUN cd /client-app && \
+RUN . /etc/profile && \
+	cd /client-app && \
+	nvm install && \
 	npm install && \
 	npm test && \
     npm run build-client
 
 EXPOSE 8000
 
-CMD cd /client-app \
+CMD . /etc/profile \
+    && cd /client-app \
+    && nvm use \
     && npm run dev-server

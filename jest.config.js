@@ -13,6 +13,14 @@ module.exports = {
   "moduleNameMapper": {
     "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/node_modules/tquinlan1992-webpack-util/src/jest/assetsTransformer.js",
     "\\.(css|less)$": "<rootDir>/node_modules/tquinlan1992-webpack-util/src/jest/assetsTransformer.js"
+  }, 
+  "coverageThreshold": {
+    "global": {
+      "statements": 50,
+      "lines": 50,
+      "branches": 50,
+      "functions": 50
+    }
   }
 };
 

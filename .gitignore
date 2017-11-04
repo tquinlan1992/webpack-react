@@ -3,3 +3,4 @@ node_modules
 npm-debug.log
 tquinlan1992-webpack-util
 .vscode
+coverage

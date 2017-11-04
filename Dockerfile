@@ -4,7 +4,7 @@ COPY . /client-app/
 
 RUN cd /client-app && \
 	npm install && \
-	npm test && \
+	npm test -- --coverage && \
     npm run build-client
 
 EXPOSE 8000

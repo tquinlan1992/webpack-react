@@ -6,5 +6,5 @@
     "publicDirSrc": "/src/public/**/*",
     "publicDirOut": "/",
     "tsconfig": "/tsconfig.json",
-    "url": "http://localhost:8080"
+    "urlBase": "http://localhost:8080"
 }

@@ -25,7 +25,7 @@ const App = () => (
 
             </AppBar>
             <div>
-                <h1>Home Page 19</h1>
+                <h1>Home Page</h1>
             </div>
         </div>
     </Theme>

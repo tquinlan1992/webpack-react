@@ -11,8 +11,9 @@ import {
     BrowserRouter,
     Route,
     Link,
-    withRouter
+    withRouter,
 } from 'react-router-dom';
+import { Redirect } from 'react-router';
 
 getEnvrionmentConfigs.then((data: any) => {
     console.log("data", data);
@@ -53,11 +54,15 @@ const home = () => (
     <h1>Home</h1>
 );
 
+const redirectToHomePage = () => (
+    <Redirect to="/first" />
+);
 
 ReactDOM.render(
     <BrowserRouter>
         <div>
             <App/>
+            <Route exact path="/" component={redirectToHomePage}/>
             <Route exact path="/first" component={home} />
             <Route path="/second" component={second} />
             <Route path="/third" component={third} />

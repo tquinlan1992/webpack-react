@@ -33,7 +33,7 @@ class AppBar extends React.Component<any, any> {
         return (
             <AppBarMaterialUi className='AppBar' onLeftIconButtonTouchTap={this.changeHeader} title="Title" iconClassNameRight="muidocs-icon-navigation-expand-more">
                 <Tabs style={styles.tabs} value={this.props.history.location.pathname}>
-                    <Tab label='first tab' value="/first" onActive={this.goToRoute}>{this.state.header} First tab a invalidation in docker text</Tab>
+                    <Tab label='first tab' value="/first" onActive={this.goToRoute}>{this.state.header} First tab a in docker text</Tab>
                     <Tab label='second tab' value="/second" onActive={this.goToRoute}>Second tab text <img src={qaLogo} /></Tab>
                     <Tab label='third tab' value="/third" onActive={this.goToRoute}>Third tab text2</Tab>
                 </Tabs>

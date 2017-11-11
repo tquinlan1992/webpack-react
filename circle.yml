@@ -8,7 +8,6 @@ test:
   override:
       - npm install
       - npm run build-client
-      - aws s3 sync build2 s3://webpack-react --delete
-run: 
-      - docker build --rm=false -t $DOCKER_USER/webpack-react:$CIRCLE_BRANCH .
-      - docker run --name app $DOCKER_USER/webpack-react:$CIRCLE_BRANCH
+run:
+    - docker build --rm=false -t $DOCKER_USER/webpack-react:$CIRCLE_BRANCH .
+    - docker run --name app $DOCKER_USER/webpack-react:$CIRCLE_BRANCH

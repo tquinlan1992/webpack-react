@@ -7,6 +7,7 @@
     "build-client": "tquinlan1992-webpack-util",
     "watch-client": "tquinlan1992-webpack-util -w",
     "dev-server": "tquinlan1992-webpack-util -d",
+    "start": "npm run dev-server",
     "test": "jest"
   },
   "author": "",

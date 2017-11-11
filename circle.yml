@@ -13,10 +13,10 @@ deployment:
   master:
       branch: develop
       commands:
-      - docker create --name app $DOCKER_USER/webpack-react:$CIRCLE_BRANCH
-      - docker cp app:/client-app/build ./build
-      - aws s3 sync build s3://webpack-react --delete
-      - aws configure set region us-west-2
-      - aws configure set preview.cloudfront true
-      - aws configure set preview.create-invalidation true
-      - aws cloudfront create-invalidation --cli-input-json "{\"DistributionId\":\"E32KCMPTHT2S2H\",\"InvalidationBatch\":{\"Paths\":{\"Quantity\":1,\"Items\":[\"/*\"]},\"CallerReference\":\"$(date +%s)\"}}"
+          - docker create --name app $DOCKER_USER/webpack-react:$CIRCLE_BRANCH
+          - docker cp app:/client-app/build ./build
+          - aws s3 sync build s3://webpack-react --delete
+          - aws configure set region us-west-2
+          - aws configure set preview.cloudfront true
+          - aws configure set preview.create-invalidation true
+          - aws cloudfront create-invalidation --cli-input-json "{\"DistributionId\":\"E32KCMPTHT2S2H\",\"InvalidationBatch\":{\"Paths\":{\"Quantity\":1,\"Items\":[\"/*\"]},\"CallerReference\":\"$(date +%s)\"}}"

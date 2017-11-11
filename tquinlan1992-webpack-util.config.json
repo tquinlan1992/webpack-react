@@ -4,9 +4,9 @@
     "appOutputPath": "/build",
     "htmlTitle": "Webpack-React",
     "publicDirSrc": "/src/public/**/*",
-    "publicDirOut": "/",
+    "publicDirOut": "/public",
     "tsconfig": "/tsconfig.json",
     "urlBase": "http://localhost",
     "port": 8080,
-    "allowedHosts": [".localhost"]
+    "allowedHosts": [".localhost", "tquinlan1992dev.com"]
 }

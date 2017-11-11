@@ -4,7 +4,7 @@ COPY . /client-app/
 
 RUN . /etc/profile && \
 	cd /client-app && \
-	nvm use && \
+	nvm install && \
 	npm install && \
 	npm test -- --coverage && \
     npm run build-client

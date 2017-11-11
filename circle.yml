@@ -1,13 +1,9 @@
 machine:
-  node:
-      version: 8.9.0
   services:
       - docker
 
 test:
   override:
-      - npm install
-      - npm run build-client
       - docker build --rm=false -t $DOCKER_USER/webpack-react:$CIRCLE_BRANCH .
       - docker create --name app $DOCKER_USER/webpack-react:$CIRCLE_BRANCH
       - docker cp app:/client-app/build ./build2

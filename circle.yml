@@ -1,10 +1,7 @@
 machine:
   services:
       - docker
-
-dependencies:
-
-
+      
 test:
   override:
       - docker build --rm=false -t $DOCKER_USER/webpack-react:$CIRCLE_BRANCH .

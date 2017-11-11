@@ -5,13 +5,10 @@ machine:
 test:
   override:
       - docker build --rm=false -t $DOCKER_USER/webpack-react:$CIRCLE_BRANCH .
-      - docker create --name app $DOCKER_USER/webpack-react:$CIRCLE_BRANCH
-      - docker cp app:/client-app/build ./build
-      - aws s3 sync build s3://webpack-react --delete
 
 deployment:
   master:
-      branch: master
+      branch: develop
       commands:
       - docker create --name app $DOCKER_USER/webpack-react:$CIRCLE_BRANCH
       - docker cp app:/client-app/build ./build

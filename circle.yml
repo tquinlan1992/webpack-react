@@ -11,7 +11,7 @@ test:
 
 deployment:
   master:
-      branch:   develop
+      branch: master
       commands:
       - docker create --name app $DOCKER_USER/webpack-react:$CIRCLE_BRANCH
       - docker cp app:/client-app/build ./build

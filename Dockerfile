@@ -13,4 +13,5 @@ EXPOSE 8000
 
 CMD . /etc/profile && \
 	cd /client-app && \
+	nvm use && \
     npm run dev-server
